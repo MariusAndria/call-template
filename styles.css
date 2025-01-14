@@ -1,0 +1,202 @@
+ /* Animation de fade-in pour le texte */
+    .animated {
+        animation-name: fadeIn;
+        animation-timing-function: ease-out;
+    }
+    
+    /* Animation de fade-in pour les éléments */
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    /* Animation du bouton */
+    .animated.fadeInUp {
+        animation-name: fadeInUp;
+        animation-timing-function: ease-out;
+    }
+    
+    @keyframes fadeInUp {
+        0% {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Amélioration du bouton */
+    .btn-light {
+        color: #007bff;
+        background-color: #fff;
+        border: none;
+        padding: 1rem 2rem;
+        font-size: 1.2rem;
+        transition: all 0.3s ease;
+    }
+
+    /* Effet au survol du bouton */
+    .btn-light:hover {
+        background-color: #007bff;
+        color: white;
+        box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4);
+    }
+
+    /* Effet de superposition sombre */
+    .bg-primary {
+        background-color: #007bff !important;
+    }
+
+
+     /* Animation de la transition du contenu */
+    .service-details {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    .collapse.show .service-details {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    /* Animation des icônes de service */
+    .service-icon {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .service-icon:hover {
+        transform: scale(1.1);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Animation des titres des services */
+    .service-title {
+        transition: color 0.3s ease;
+    }
+
+    .service-title:hover {
+        color: #007bff;
+    }
+
+/* Styliser la section des services */
+#services {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+.service-icon-container {
+    width: 120px;
+    height: 120px;
+    background-color: #007bff;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Ajouter un effet de survol à l'icône */
+.service-icon-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Styliser les icônes de service */
+.service-icon {
+    width: 60px;
+    height: 60px;
+}
+
+/* Titre des services */
+.service-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #343a40;
+}
+
+/* Détails des services */
+.service-details {
+    margin-top: 15px;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Ajouter un bouton stylisé pour chaque service */
+.btn-service {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 30px 15px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-service:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Espacement entre les services */
+.col-md-4.mb-4 {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.col-md-4.mb-4:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Style personnalisé pour les témoignages */
+.testimonial {
+    background-color: white;
+    border-radius: 10px; /* Coins arrondis pour un look moderne */
+    padding: 30px;
+    box-shadow: none; /* Supprimer les ombres */
+    transition: all 0.3s ease; /* Animation pour un effet au survol */
+}
+
+.testimonial:hover {
+    transform: translateY(-5px); /* Légère élévation au survol */
+}
+
+.blockquote {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #333; /* Couleur de texte plus sombre pour la citation */
+}
+
+.blockquote-footer {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #555;
+}
+
+.badge {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 8px 12px;
+}
+
+.text-muted {
+    color: #888; /* Pour un texte secondaire plus léger */
+}
+
+@media (max-width: 767px) {
+    /* Pour les petits écrans, les témoignages prennent toute la largeur */
+    .col-md-4 {
+        width: 100%;
+    }
+}
+
+
+    
+
